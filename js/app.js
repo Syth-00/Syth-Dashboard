@@ -7,9 +7,20 @@ loginForm.addEventListener("submit", function(event) {
     const username = document.querySelector("#username").value;
     const password = document.querySelector("#password").value;
 
-    alert(
-        "Username: " + username +
-        "\nPassword: " + password
-    );
+    const correctUsername = "admin";
+    const correctPassword = "12345";
+
+    if (
+        username === correctUsername &&
+        password === correctPassword
+    ) {
+
+        alert("✅ Login berhasil!");
+
+    } else {
+
+        alert("❌ Username atau password salah!");
+
+    }
 
 });
